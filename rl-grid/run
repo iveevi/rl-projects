@@ -1,0 +1,15 @@
+#!/bin/sh
+
+if [ "$1" = "Debug" ]; then
+	cmake -DCMAKE_BUILD_TYPE=Debug .
+else
+	cmake -DCMAKE_BUILD_TYPE=Release .
+fi
+
+make
+
+if [ "$1" = "Debug" ]; then
+	gdb ./grid
+else
+	./grid
+fi

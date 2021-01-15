@@ -1,0 +1,3 @@
+[submodule "zhetapi"]
+	path = zhetapi
+	url = https://github.com/vedavamadathil/zhetapi.git
